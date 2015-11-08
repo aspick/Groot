@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     ss.osx.deployment_target = "10.9"
 
     ss.source_files  = "Groot/**/*.{swift,h,m}"
-    # ss.private_header_files = "Groot/Private/*.h"
+    ss.public_header_files = "Groot/Private/*.h"
   end
 
   s.subspec "ObjC" do |ss|
