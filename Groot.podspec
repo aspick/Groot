@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
     ss.osx.deployment_target = "10.8"
 
     ss.source_files  = "Groot/**/*.{h,m}"
-    ss.private_header_files = "Groot/Private/*.h"
+    ss.public_header_files = "Groot/Private/*.h"
   end
 
   s.frameworks = "Foundation", "CoreData"
